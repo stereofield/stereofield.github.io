@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stereofield</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="header">
+      stereofield
+    </div>
+    <div class="container"></div>
+    <div class="footer">
+      Copyright &copy; 2017 Chip Thrasher.<br>
+      <a href="https://soundcloud.com/stereofld">SoundCloud</a> &middot;
+      <a href="https://stereofield2015.bandcamp.com">Bandcamp</a> &middot;
+      <a href="https://fanburst.com/stereofield">Fanburst</a> &middot;
+      <a href="https://open.spotify.com/artist/4dRlMJPbaDvUtuN4mCTlry">Spotify</a>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>
+      var songs = [
+        [
+          'Timeshift',
+          'https://github.com/chipthrasher/artwork/raw/master/reminiscing.png',
+          'https://fanlink.to/ord0003'
+        ], [
+          'Endings',
+          'https://github.com/chipthrasher/artwork/raw/master/ending.png',
+          'https://soundcloud.com/delimited/stereofield-endings'
+        ], [
+          'Arrival',
+          'https://github.com/chipthrasher/artwork/raw/master/arrival.png',
+          'https://soundcloud.com/stereofld/arrival'
+        ], [
+          'Before',
+          'https://github.com/chipthrasher/artwork/raw/master/before.png',
+          'https://soundcloud.com/stereofld/before'
+        ], [
+          'Dream',
+          'https://github.com/chipthrasher/artwork/raw/master/timeshift.png',
+          'https://soundcloud.com/stereofld/dream'
+        ], [
+          'Cosmos',
+          'https://github.com/chipthrasher/artwork/raw/master/cosmos.png',
+          'https://soundcloud.com/stereofld/cosmos'
+        ], [
+          'Illusion',
+          'https://github.com/chipthrasher/artwork/raw/master/illusion.png',
+          'https://soundcloud.com/routenote-13845/stereofield-illusion'
+        ], [
+          'Ion',
+          'https://github.com/chipthrasher/artwork/raw/master/dream.png',
+          'https://soundcloud.com/routenote-13845/stereofield-ion'
+        ], [
+          'Helix',
+          'https://github.com/chipthrasher/artwork/raw/master/helix.png',
+          'https://soundcloud.com/stereofld/helix'
+        ], [
+          'Vortex',
+          'https://github.com/chipthrasher/artwork/raw/master/vortex.png',
+          'https://soundcloud.com/stereofld/vortex'
+        ], [
+          'Gliese [Remix]',
+          'https://github.com/chipthrasher/artwork/raw/master/ion.png',
+          'https://soundcloud.com/stereofld/gliese'
+        ], [
+          'Flight [Cover]',
+          'https://github.com/chipthrasher/artwork/raw/master/flight.png',
+          'https://soundcloud.com/stereofld/flight'
+        ], [
+          'Paralayers',
+          'https://github.com/chipthrasher/artwork/raw/master/paralayers.png',
+          'https://soundcloud.com/stereofld/paralayers'
+        ]
+      ];
+      for(var i = 0; i < songs.length; i++) {
+        var title = songs[i][0];
+        var artwork = songs[i][1];
+        var click = songs[i][2];
+        $('div.container').append('<div style="background-image: url(' + artwork +
+          ')" class="item"><a href="' + click +
+          '"><div class="title">' + title + '</div></a></div>');
+      }
+    </script>
+  </body>
+</html>
