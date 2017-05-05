@@ -1,0 +1,56 @@
+body {
+  margin: 0px;
+  background: #222;
+  color: white;
+  font-family: "SFNS Display", "SF UI Display", "San Fransisco", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+}
+div.header {
+  padding: 7vw 0px;
+  text-align: center;
+  font-size: 4vw;
+}
+div.container {
+  margin: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+div.item {
+  width: 25vw;
+  height: 25vw;
+  display: inline-block;
+  background-image: url(https://i1.sndcdn.com/artworks-000218127060-vk6bc6-t500x500.jpg);
+  background-size: 25.5vw;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease;
+  background-position: center;
+  z-index: 1;
+}
+div.item:hover {
+  background-size: 30vw;
+}
+div.footer {
+  font-weight: normal;
+  font-size: 20px;
+  padding: 20px 0px;
+  text-align: center;
+  line-height: 1.6;
+}
+div.item div.title {
+  width: 25vw;
+  height: 25vw;
+  opacity: 0;
+  z-index: 2;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  background: rgba(34,34,34,0.7);
+  transition: opacity 0.2s ease;
+  align-items: center;
+  justify-content: center;
+}
+div.item div.title:hover {
+  opacity: 1;
+}
